@@ -1,0 +1,19 @@
+# Android/Gradle build artifacts
+.gradle/
+.gradle-user/
+.gradle-user-home/
+.kotlin/
+build/
+app/build/
+
+# Local machine configuration
+local.properties
+
+# Local diagnostics
+logs/
+diagnostics/heapdumps/
+*.hprof
+
+.superpowers/
+.vendor/
+app/.cxx/

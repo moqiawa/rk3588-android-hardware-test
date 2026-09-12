@@ -7,6 +7,7 @@ plugins {
 android {
     namespace = "com.rk.hardwaretest"
     compileSdk = libs.versions.compileSdk.get().toInt()
+    ndkVersion = "27.2.12479018"
 
     defaultConfig {
         applicationId = "com.rk.hardwaretest"
@@ -19,6 +20,7 @@ android {
     }
 
     buildFeatures { compose = true }
+    externalNativeBuild { cmake { path = file("src/main/cpp/CMakeLists.txt") } }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
